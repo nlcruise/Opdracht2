@@ -1,4 +1,27 @@
 #include <MultiFuncShield.h> //includeer de libary die benodigd is om bepaalde functies van het MFS te gebruiken
+
+/*
+ * Opdracht 2 (nummerraadspel)
+ * Gemaakt door Wouter Honselaar (17053994) en Peter Ng (17065186)
+ * Klas 2A, Delft
+ * Functies:
+ * - Je hebt 2 seconden de tijd om op knop A1 te drukken
+ * - Na elke keer dat je erop drukt reset de tij
+ * - Als 2 seconden voorbij zijn gaat de beurt over
+ * - Als je op knopje A2 kun je de highscore zien
+ * - Als 2 seconden voorbij zijn en je evenveel op het knopje hebt gedrukt als er binair met de LED's wordt weergegeven (D1 = 8, D4 = 1) win je de beurt
+ * - Als je te weinig of te veel op knopje A1 drukt dan komt er na 2 seconden 'FAIL' in het scherm te staan
+ * - Als je sneller bent dan de huidige highscore gaat de speaker piepen
+ * - Op het display wordt tijdens het spelen hexadecimaal weergegeven hoe vaak je op A1 hebt gedrukt
+ * Opmerking: deze source staat ook op het GitHub-account van Wouter: https://github.com/nlcruise/Opdracht2
+ * Bronnen:
+ * Voorbeelden uit libary van MultiFunctionShield, namelijk 'Beeper', 'Buttons', 'Led_Display' en 'Led_Lights'
+ * https://www.arduino.cc/reference/en/language/functions/time/millis/
+ * Code van Gert den Neijsel uit PowerPoint-presentatie hoorcollege Embedded Systems
+ * Opdracht 1b, Wouter Honselaar
+ * Arduino-voorbeeld 'StateChangeDetection'
+ * 
+ */
 unsigned int randNumber; //declareer de variabele randNumber
 unsigned int buttonState; //declareer de variabele buttonState
 unsigned int buttonStateA2; //declareer de variabele buttonStateA2
