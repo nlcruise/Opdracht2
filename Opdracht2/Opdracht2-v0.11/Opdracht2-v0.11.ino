@@ -89,6 +89,7 @@ void loop() { //het gedeelte in dit blok wordt oneindig achter elkaar uitgevoerd
     MFS.write((int)tijd); //laat op het display zien hoe lang de speler erover heeft gedaan om het nummer te raden (gecast naar int omdat het display float's met veel decimalen niet zomaar kan weergeven)
     if (tijd < winnaarsTijd) { //als de tijd kleiner is dan de snelste tijd, dan wordt de code in dit blok uitgevoerd
       winnaarsTijd = tijd; //de winnaarstijd wordt gelijk gesteld aan de tijd die de speler erover heeft gedaan
+      MFS.beep(5, 5, 4, 2);
     }
   }
   else {
